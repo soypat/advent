@@ -69,7 +69,7 @@ func parseCubeshow(buf []byte) (r, g, b int) {
 		buf = bytes.TrimSpace(buf)
 		cube, buf, ok = bytes.Cut(buf, []byte{',', ' '})
 		number, color, _ := bytes.Cut(cube, []byte{' '})
-		gotnum, err := strconv.ParseUint(string(number), 10, 32)
+		gotnum, err := strconv.ParseInt(string(number), 10, 32)
 		if err != nil {
 			panic(err.Error())
 		}
