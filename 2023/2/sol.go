@@ -62,7 +62,6 @@ func SumPossible(buf *bufio.Reader, rMax, gMax, bMax int) int {
 	}
 	return idSum
 }
-
 func parseCubeshow(buf []byte) (r, g, b int) {
 	ok := true
 	for ok {
@@ -80,10 +79,7 @@ func parseCubeshow(buf []byte) (r, g, b int) {
 			g = int(gotnum)
 		} else if color[0] == 'b' {
 			b = int(gotnum)
-		} else {
-			panic("unknown color " + string(color))
 		}
 	}
-
 	return r, g, b
 }

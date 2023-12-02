@@ -1,5 +1,7 @@
 # Advent 2023
 
+Solutions for [Advent of Code 2023](https://adventofcode.com/2023)
+
 # Benchmarks 2023
 Run the following to show benchmarks on your machine.
 ```sh
